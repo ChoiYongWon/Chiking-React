@@ -1,7 +1,7 @@
 var path = require("path")
 
 module.exports = {
-    mode: 'production',
+    mode: 'development',
     devtool: 'eval',
 
 
@@ -22,7 +22,8 @@ module.exports = {
                 loader : 'babel-loader',
                 query: {
                     presets: ['@babel/preset-env', '@babel/preset-react']
-                }
+                },
+                exclude: path.resolve(__dirname, 'node_modules/')
             },
             {
                 test:/\.css$/,
