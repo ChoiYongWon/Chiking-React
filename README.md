@@ -1,1 +1,1 @@
-Chiking frontend
+chiking.kr
